@@ -166,12 +166,16 @@ ul {
 nav {
   display: flex;
   justify-content: space-around;
+  align-content: flex-end;
   padding-top: 40px;
   padding-bottom: 40px;
-  padding-left: 60px;
+  background-color: black;
+  font-family: 'Rubik', sans-serif;
+  font-size: 20px;
 }
 nav a {
-  color: black;
+  color: white;
+  text-decoration: none;
 }
 button {
   font-size: 14px;
@@ -186,22 +190,42 @@ button {
 .container {
   width: 800px;
   margin: 0 auto;
+  background-color: #D8BFD8;
 }
 .bio-img {
   width: 50%;
-}
-.text-img {
-  padding-bottom: 15px;
+  border: 2px solid white;
 }
 .header-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding-top: 30px;
+  background-color: #DDA0DD;
+}
+.header-content .text-container {
+  width: 100%;
+  padding: 0 11%;
+  padding-bottom: 20px;
+}
+.title-content {
+  display: flex;
+  justify-content: space-around;
+  align-content: flex-end;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: white;
+  background-color: black;
+  font-family: 'Rubik', sans-serif;
+}
+.skills-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin-bottom: 20px;
   padding-top: 30px;
-  background-color: silver;
 }
-.header-content .text-container {
+.skills-content .text-container {
   width: 48%;
   padding: 0 1%;
   padding-bottom: 20px;
@@ -219,6 +243,9 @@ button {
   padding: 0 1%;
   padding-bottom: 20px;
 }
+.main-content .text-container p > ul {
+  font-size: 18px;
+}
 .bottom-content {
   display: flex;
   margin: 0 2% 20px;
@@ -230,6 +257,12 @@ button {
 }
 .bottom-content .text-container:last-child {
   padding-right: 0;
+}
+.footer-content .text-container {
+  width: 88%;
+  padding: 20px 0px 20px 0px;
+  color: white;
+  text-align: center;
 }
 /* Stretch: Design new page - Contact Form CSS */
 input[type=text],
