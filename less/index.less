@@ -101,6 +101,15 @@ p {
  .p-class;
 } 
 
+.mobile-class {
+  width: 800px;
+  background: gray;
+
+  @media (max-width: 800px) {
+    width: 100%;
+    background: black;
+  }
+}
 
 /* Other stuff below */
 
@@ -127,6 +136,7 @@ h3 {
 	font-size: 25px;
 	font-style: italic;
 	font-weight: lighter;
+	padding-top: 15px;
 }
 
 h4 {
@@ -204,6 +214,11 @@ button {
 	color: white;
 	background-color: black;
 	font-family: 'Rubik', sans-serif;
+
+	p {
+		color:white;
+		padding-right: 30px;
+	}
 }
 
 .skills-content {
@@ -270,12 +285,12 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
-}
-
-footer nav a {
+	font-size: 14px;
+	
+	nav a {
     color: white;
     text-decoration: none;
+}
 }
 
 /* Stretch: */
