@@ -134,6 +134,32 @@ html,
 body {
   height: 100%;
 }
+/* Preprocessing */
+.bio-img {
+  width: 50%;
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border: 5px solid white;
+}
+/* Other stuff below */
+p {
+  font-family: 'Rubik', sans-serif;
+  color: #200A1F;
+  font-size: 20px;
+  line-height: 1.3;
+  padding-bottom: 10px;
+}
+.main-content .text-container p {
+  font-size: 10px;
+}
+.main-content .text-container ul {
+  font-family: 'Lora';
+}
+.main-content .text-container h2,
+h3 {
+  color: #8B008B;
+}
 h1,
 h2,
 h3,
@@ -154,14 +180,20 @@ h3 {
   font-style: italic;
   font-weight: lighter;
 }
-p {
-  line-height: 1.4;
-  font-family: 'Helvetica', sans-serif;
-  font-size: 18px;
+h4 {
+  font-size: 22px;
+  font-weight: normal;
 }
-ul {
-  line-height: 1.4;
-  font-family: 'Helvetica', sans-serif;
+h5 {
+  font-size: 20px;
+  font-style: lighter;
+}
+ul li {
+  line-height: 1.6;
+  font-family: 'Rubik', sans-serif;
+  font-size: 20px;
+  float: left;
+  color: #50194C;
 }
 nav {
   display: flex;
@@ -192,16 +224,11 @@ button {
   margin: 0 auto;
   background-color: #D8BFD8;
 }
-.bio-img {
-  width: 50%;
-  border: 2px solid white;
-}
 .header-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   padding-top: 30px;
-  background-color: #DDA0DD;
 }
 .header-content .text-container {
   width: 100%;
@@ -243,9 +270,6 @@ button {
   padding: 0 1%;
   padding-bottom: 20px;
 }
-.main-content .text-container p > ul {
-  font-size: 18px;
-}
 .bottom-content {
   display: flex;
   margin: 0 2% 20px;
@@ -264,36 +288,6 @@ button {
   color: white;
   text-align: center;
 }
-/* Stretch: Design new page - Contact Form CSS */
-input[type=text],
-select,
-textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-input[type=submit] {
-  background-color: red;
-  font-size: 15px;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-.contact-container {
-  border-radius: 5px;
-  background-color: white;
-  padding: 20px 50px 20px 50px;
-}
 footer {
   width: 100%;
   background: black;
@@ -310,3 +304,4 @@ footer nav a {
   color: white;
   text-decoration: none;
 }
+/* Stretch: */

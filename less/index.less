@@ -57,7 +57,44 @@ html, body {
     height: 100%;
 }
 
-@main-text: 18px;
+/* Preprocessing */
+
+
+.round-borders (@radius: 20px) {
+  border-radius: @radius;
+  -moz-border-radius: @radius;
+  -webkit-border-radius: @radius;
+  border: 5px solid white;
+}
+
+.bio-img {
+	width: 50%;
+	.round-borders;
+}
+
+
+/* Other stuff below */
+
+p {
+	font-family: 'Rubik', sans-serif;
+	color:#200A1F;
+	font-size: 20px;
+	line-height: 1.3;
+	padding-bottom: 10px;
+}
+
+.main-content .text-container p {
+ font-size: 10px;
+} 
+
+.main-content .text-container ul {
+ font-family: 'Lora';
+} 
+
+.main-content .text-container h2, h3 {
+color: #8B008B;
+}
+
 
 h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
@@ -79,15 +116,25 @@ h3 {
 	font-weight: lighter;
 }
 
-p {
-	line-height: 1.4;
-	font-family: 'Helvetica', sans-serif;
-	font-size: 18px;
+h4 {
+	font-size: 22px;
+	font-weight: normal;
+}
+
+h5 {
+	font-size: 20px;
+	font-style: lighter;
 }
 
 ul {
-	line-height: 1.4;
-	font-family: 'Helvetica', sans-serif;
+
+	 li {
+		line-height: 1.6;
+		font-family: 'Rubik', sans-serif;
+		font-size: 20px;
+		float: left;
+		color:#50194C;
+    }
 }
 
 nav {
@@ -99,12 +146,13 @@ nav {
 	background-color: black;
 	font-family: 'Rubik', sans-serif;
 	font-size: 20px;
+
+		a {
+		color: white;
+		text-decoration: none;
+}
 }
 
-nav a {
-	color: white;
-	text-decoration: none;
-}
 
 button {
     font-size: 14px;
@@ -123,24 +171,20 @@ button {
 	background-color: #D8BFD8;
 }
 
-.bio-img {
-	width: 50%;
-	border: 2px solid white;
-}
-
 .header-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
 	padding-top: 30px;
-	background-color: #DDA0DD;
+
+		.text-container {
+    	width: 100%;
+    	padding: 0 11%;
+    	padding-bottom: 20px; 
+}
+		
 }
 
-.header-content .text-container {
-    width: 100%;
-    padding: 0 11%;
-    padding-bottom: 20px; 
-}
 
 .title-content {
     display: flex;
@@ -158,13 +202,13 @@ button {
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-bottom: 20px;
-    padding-top: 30px;
-}
+	padding-top: 30px;
 
-.skills-content .text-container {
-    width: 48%;
-    padding: 0 1%;
-    padding-bottom: 20px; 
+		.text-container {
+    	width: 48%;
+    	padding: 0 1%;
+    	padding-bottom: 20px; 
+}
 }
 
 .main-content {
@@ -173,29 +217,26 @@ button {
     justify-content: space-evenly;
     margin-bottom: 20px;
     padding-top: 30px;
-    border-bottom: 1px dashed black; 
-}
+	border-bottom: 1px dashed black; 
 
-.main-content .text-container {
-    width: 48%;
-    padding: 0 1%;
-    padding-bottom: 20px; 
+	   .text-container {
+    	width: 48%;
+    	padding: 0 1%;
+    	padding-bottom: 20px; 
 }
-
-.main-content .text-container p > ul {
-font-size: @main-text;
 }
 
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
-    justify-content: space-around;
+	justify-content: space-around;
+
+		.text-container {
+    	padding-right: 4%;
+    	padding-top: 4%;
+}
 }
 
-.bottom-content .text-container {
-    padding-right: 4%;
-    padding-top: 4%;
-}
 
 .bottom-content .text-container:last-child {
     padding-right: 0;
@@ -206,40 +247,6 @@ font-size: @main-text;
     padding: 20px 0px 20px 0px;
 	color: white;
 	text-align: center;
-}
-
-/* Stretch: Design new page - Contact Form CSS */
-
-input[type=text], select, textarea {
-  width: 100%; 
-  padding: 12px;   
-  border: 1px solid #ccc; 
-  border-radius: 4px;
-  box-sizing: border-box; 
-  margin-top: 6px;
-  margin-bottom: 16px; 
-  resize: vertical;
-}
-
-input[type=submit] {
-  background-color: red;
-  font-size: 15px;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-
-.contact-container {
-  border-radius: 5px;
-  background-color: white;
-  padding: 20px 50px 20px 50px;
 }
 
 
@@ -261,4 +268,6 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
+/* Stretch: */
 
