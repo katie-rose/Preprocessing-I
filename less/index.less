@@ -59,6 +59,7 @@ html, body {
 
 /* Preprocessing */
 
+@header-color: #8B008B;
 
 .round-borders (@radius: 20px) {
   border-radius: @radius;
@@ -88,24 +89,24 @@ html, body {
 	padding-bottom: 10px;
 }
 
-
-/* Other stuff below */
+.main-content .text-container h2, h3 {
+color: @header-color;
+}
 
 p {
-	.p-class;
+	.font-class;
 }
+
+.main-content .text-container ul {
+ .p-class;
+} 
+
+
+/* Other stuff below */
 
 .main-content .text-container p {
  font-size: 10px;
 } 
-
-.main-content .text-container ul {
- font-family: 'Lora';
-} 
-
-.main-content .text-container h2, h3 {
-color: #8B008B;
-}
 
 
 h1, h2, h3, h4, h5 {
